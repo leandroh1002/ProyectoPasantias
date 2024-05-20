@@ -1,6 +1,7 @@
     require('dotenv').config();
     const cron = require('node-cron');
     const { PORT, SYNC_FORCE } = process.env;
+    const port = process.env.PORT || 4000;
     const {server,serverSocket,io} = require('./src/app.js');
     const { conn, People } = require('./src/db.js');
 
@@ -15,8 +16,8 @@
             console.log('Performing maintenance tasks...');
 
             // Resto de la configuración y rutas de tu servidor
-            server.listen(PORT, () => {
-                console.log(`Server listening at ${PORT}`);
+            server.listen(port, () => {
+                console.log(`Server listening at ${port}`);
             });
         } catch (error) {
             console.error('Error starting server!', error);
