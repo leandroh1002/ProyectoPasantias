@@ -9,7 +9,7 @@ import './index.css'
 const REACT_APP_API_URL = import.meta.env.VITE_BASE_URL;
 
 
-axios.defaults.baseURL = REACT_APP_API_URL
+axios.defaults.baseURL = 'https://proyectopasantias.onrender.com'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
