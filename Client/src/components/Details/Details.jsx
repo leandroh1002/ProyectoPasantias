@@ -24,7 +24,7 @@ function Details() {
     <div>
         <p>{countries.namePublish}</p>
         <hr />
-        <h3>Sos estudiante avanzado de </h3> <p>{countries.carrer}</p><h3>?</h3>
+        <h3>Sos estudiante avanzado de </h3> <p>{countries.carrer}?</p>
         <p>Unite al equipo de {countries.enterprise}</p>
         <p>{countries.perfilDescription}</p>
         <h4>Algunas tareas a realizar</h4>
