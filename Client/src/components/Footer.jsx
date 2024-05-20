@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div>
       <footer class="text-gray-600 body-font">
-        <div class="container px-5 py-10 mx-auto bg-[#3a4652] max-w-none">
+        <div class="container px-5 py-8 mx-auto bg-[#3a4652] max-w-none">
           <div class="flex flex-wrap md:text-left text-center order-first justify-center">
             <div class="lg:w-1/4 md:w-1/2 w-full px-4">
               <h2 class="title-font font-medium text-gray-50 tracking-widest text-sm mb-3">Sede Central UNSTA</h2>

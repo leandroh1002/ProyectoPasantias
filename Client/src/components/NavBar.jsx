@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 function NavBar() {
+  const location = useLocation();
+
   return (
     <div><header class="text-gray-50 body-font bg-[#194da0]">
     <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
@@ -16,11 +18,11 @@ function NavBar() {
         <a href="https://alumnos.unsta.edu.ar/" class="mr-5 hover:text-gray-900 cursor-pointer">Autogestion</a>
         <a href="https://seo.unsta.edu.ar/" class="mr-5 hover:text-gray-900 cursor-pointer">CEO</a>
       </nav>
-      <Link to={`/login`}><button class="inline-flex items-center bg-[#ca7d10] border-0 py-1 px-3 focus:outline-none hover:bg-[#ca7d10] rounded text-base mt-4 md:mt-0">Login
+      {location.pathname !== '/login' && <Link to={`/login`}><button class="inline-flex items-center bg-[#ca7d10] border-0 py-1 px-3 focus:outline-none hover:bg-[#ca7d10] rounded text-base mt-4 md:mt-0">Login
         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
         </svg>
-      </button></Link>
+      </button></Link>}
     </div>
   </header></div>
   )
